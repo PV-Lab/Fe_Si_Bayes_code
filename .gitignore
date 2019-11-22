@@ -1,0 +1,5 @@
+.ipynb_checkpoints/*
+.PMFs/*
+.obs_lists/*
+*~
+bayesim/__pycache__/*
