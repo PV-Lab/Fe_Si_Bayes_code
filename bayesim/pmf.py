@@ -557,6 +557,9 @@ class Pmf(object):
         else:
             mat = dense_grid
 
+        # janky add-in for different contrast
+        mat = np.sqrt(mat)
+            
         max_prob = max(self.points['prob'])
         #param_vals = dense_grid['param_vals']
         param_edges = {p.name:p.edges for p in self.params}
